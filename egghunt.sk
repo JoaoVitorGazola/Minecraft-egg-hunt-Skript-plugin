@@ -1,0 +1,28 @@
+# Commands:
+command /resetrace:
+    trigger:
+        # se o dragao foi morto:
+            # Parar o mapa e anunciar o fim da corrida
+            # Pontuar quem estiver com o ovo no inventario e anunciar
+            # Reinicar o mapa com uma nova seed
+        # se o dragao nao foi morto:
+            # anunciar que o jogo continua
+
+# Events
+    # Se alguem deslogar:
+        # Se estava com o ovo no inventario:
+            # Remover o ovo do inventario
+            # Recolocar o ovo no end
+            # Mudar variavel de alertar servidor a localizacao do ovo no intervalo de tempo definido
+    # Se alguem matar outro jogador:
+        # Se o jogador morto tiver o ovo no inventario:
+            # Remover ovo do inventario/chao (keepInventory on\off)
+            # Colocar o ovo no inventario do jogador que o matou
+    # Se o item do ovo sair de um inventario:
+        # Retirar aquele ovo do jogo
+        # Recolocar o ovo no end
+        # Mudar variavel de alertar servidor a localizacao do ovo no intervalo de tempo definido
+    # Se o ovo for clicado com o botao direito:
+        # Remover aqule ovo do jogo
+        # Adicionar item de ovo no inventario do jogador
+        # Mudar variavel de alertar servidor a localizacao do ovo no intervalo de tempo definido
