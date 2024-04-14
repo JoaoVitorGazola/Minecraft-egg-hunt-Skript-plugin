@@ -1,6 +1,6 @@
 # Minecraft Egg Hunt Skript plugin
 
-Minecraft plugin to play a minigame of who gets the ender dragon's egg first.
+Minecraft plugin to play a minigame of who gets the ender dragon's egg first, and keeps it.
 
 ## 🚀 Setup
 
